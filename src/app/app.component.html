@@ -1,7 +1,8 @@
 <div id="documentId">
    <div class="documentClass">
        <form class="documentForm">
-          <h1>{{name}}</h1>
+
+         <h1>{{name}}</h1>
           <div id="rowOne">
           <h4>{{designation}}</h4>
           <label class="homeId" [style.color]="homeId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
@@ -17,10 +18,15 @@
           (mouseenter)="contMouseOver()" (mouseleave)="contId=false">contact</label>
          </div>
          <div id="rowTwo">
-         <img src="/assets/Prasanth_1.jpg" alt="PS" class="avatar">
-         <h1 id="homeSubjectOne">Hello,</h1>
-         <h1 id="homeSubjectTwo">a bit about me:</h1>
+            <img src="/assets/Prasanth_1.jpg" alt="PS" class="avatar">
+            <h1 id="homeSubjectOne">Hello, <br><span style="font-size:xx-large;margin-left: 50px;">a bit about me:</span></h1>
+              <div id="rwoThree">
+                 <div class="resumeClass"><a>MY RESUME</a></div>
+                 <div class="workClass"><a>MY WORK</a></div>
+                 <div class="skillClass"><a>MY SKILLS</a></div>
+               </div>
          </div>
+
        </form>
    </div>
 </div>

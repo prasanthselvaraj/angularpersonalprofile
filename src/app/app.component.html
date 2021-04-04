@@ -1,0 +1,23 @@
+<div id="documentId">
+   <div class="documentClass">
+       <form class="documentForm">
+          <h1>{{name}}</h1>
+          <div id="rowOne">
+          <h4>{{designation}}</h4>
+          <label class="homeId" [style.color]="homeId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
+          (mouseenter)="homeMouseOver()" (mouseleave)="homeId=false">Home</label>
+          
+          <label class="resId" [style.color]="resId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
+          (mouseenter)="resMouseOver()" (mouseleave)="resId=false">Resume</label>
+
+          <label class="projId" [style.color]="projId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
+          (mouseenter)="projMouseOver()" (mouseleave)="projId=false">Projects</label>
+          
+          <label class="contId" [style.color]="contId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
+          (mouseenter)="contMouseOver()" (mouseleave)="contId=false">contact</label>
+         </div>
+         <img src="https://connectoricons-prod.azureedge.net/kusto/icon_1.0.1027.1210.png" alt="Avatar" class="avatar">
+       </form>
+   </div>
+</div>
+

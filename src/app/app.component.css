@@ -38,9 +38,38 @@ h4{
 }
 
 #rwoThree{
+    position: fixed;
+    top: 21em;
+    left: 37em;
+    width: 30%;
+    height: 16%;
+}
+
+#resumeLink, #workLink, #skillsLink{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: ghostwhite;
+    font-style: italic;
+    font-size: 15px;
     position: relative;
-    top: 15em;
-    right: 10em;
+    width: 100%;
+    height: 100%;
+    margin: 17px;
+    top: 41px;
+}
+
+#resumeLink:hover {
+    cursor: grab;
+    color: maroon;
+}
+
+#workLink:hover{
+    cursor: grab;
+    color: maroon;
+}
+
+#skillsLink:hover{
+    cursor: grab;
+    color: maroon;
 }
 
 .homeId,.resId,.projId,.contId{
@@ -49,6 +78,7 @@ h4{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     margin:23px;
+    cursor: grab;
     color: rgba(100, 62, 18, 0.788);
 } 
 
@@ -72,8 +102,18 @@ h4{
 }
 
 .resumeClass, .workClass, .skillClass {
-    width: 40px;
-    height: 40px;
+    width: 111px;
+    height: 107px;
     border-radius: 50%;
-    background-color: #bdec10;
+    background-color: #10ec90;
+    margin: 20px;
+    text-align: center;
+}
+
+.workClass{
+    background-color: #4dc443;
+}
+
+.skillClass{
+    background-color: #338305;
 }

@@ -3,31 +3,66 @@
        <form class="documentForm">
 
          <h1>{{name}}</h1>
+
           <div id="rowOne">
           <h4>{{designation}}</h4>
           <label class="homeId" [style.color]="homeId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="homeMouseOver()" (mouseleave)="homeId=false">Home</label>
+          (mouseenter)="homeMouseOver()" (mouseleave)="homeId=false" (click)="homeClick()">Home</label>
           
           <label class="resId" [style.color]="resId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="resMouseOver()" (mouseleave)="resId=false">Resume</label>
+          (mouseenter)="resMouseOver()" (mouseleave)="resId=false" (click)="resClick()">Resume</label>
 
           <label class="projId" [style.color]="projId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="projMouseOver()" (mouseleave)="projId=false">Projects</label>
+          (mouseenter)="projMouseOver()" (mouseleave)="projId=false" (click)="projClick()">Projects</label>
           
           <label class="contId" [style.color]="contId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="contMouseOver()" (mouseleave)="contId=false">contact</label>
+          (mouseenter)="contMouseOver()" (mouseleave)="contId=false" (click)="contClick()">contact</label>
+          <div class="triangle-down" [style.left]="leftPosition"></div>
          </div>
+
          <div id="rowTwo">
             <img src="/assets/Prasanth_1.jpg" alt="PS" class="avatar">
             <h1 id="homeSubjectOne">Hello, <br><span style="font-size:xx-large;margin-left: 2px;">a bit about me:</span></h1>
-              <div id="rwoThree">
-                 <div class="resumeClass"><a id="resumeLink">MY RESUME</a></div>
-                 <div class="workClass"><a id="workLink">MY WORK</a></div>
-                 <div class="skillClass"><a id="skillsLink">MY SKILLS</a></div>
+              <div id="rowThree">
+                 <div class="resumeClass"  (mouseenter)="resStyle=true" (mouseleave)="resStyle=false"><a id="resumeLink" [style.color]="resStyle ? 'maroon' : 'ghostwhite'">MY RESUME</a></div>
+                 <div class="workClass" (mouseenter)="workStyle=true" (mouseleave)="workStyle=false"><a id="workLink" [style.color]="workStyle ? 'maroon' : 'ghostwhite'">MY WORK</a></div>
+                 <div class="skillClass" (mouseenter)="skillStyle=true" (mouseleave)="skillStyle=false"><a id="skillsLink" [style.color]="skillStyle ? 'maroon' : 'ghostwhite'">MY SKILLS</a></div>
                </div>
+         </div>
+
+         <div id="rowFour">
+              <p id='biographyId'>{{biography}}</p>
          </div>
 
        </form>
    </div>
 </div>
 
+<footer id="contactFooter">
+
+  <div class="mailClass">
+    <img src="/assets/icons8-mail-50.png" alt="mail" class="mailAvatar">
+    <div class="mailDiv">
+      <span class="mailLabel">Mail</span><br>
+      <span class="mailPara">{{mailInfo}}</span>
+    </div>
+  </div>
+
+  <div class="callClass">
+    <img src="/assets/icons8-phone-64.png" alt="call" class="callAvatar">
+    <div class="callDiv">
+      <span class="callLabel">Call</span><br>
+      <span class="callPara">{{callInfo}}</span>
+    </div>
+  </div>
+
+  <div class="socialClass">
+    <img src="/assets/icons8-plus-50.png" alt="social" class="socialAvatar">
+    <div class="socialDiv">
+      <span class="socialLabel">Follow me</span><br>
+      <img src="/assets/icons8-linkedin-50.png" alt="social" class="linkedinImage">
+      <img src="/assets/icons8-instagram-50.png" alt="social" class="InstaImage">
+    </div>
+  </div>
+
+</footer>

@@ -4,23 +4,24 @@ h1, h4 {
     color: rgb(136, 109, 49);
 }
 
-h1{
+h1{ 
     font-size: 35px;
     margin: 1px;
+    color: rgb(42, 78, 7);
 }
 
 h4{
    padding-right: 5em;    
 }
 
-#rowOne, #rowTwo, #rwoThree{
+#rowOne, #rowTwo, #rowThree{
     display:flex;
 }
 
 #documentId{
-    width: 100%;
-    height: 100%;
-    position: fixed;
+    width: 85%;
+    height: 66%;
+    position: relative;
 }
 
 .documentClass, .documentForm{
@@ -31,14 +32,18 @@ h4{
 
 #homeSubjectOne{
     font-size: 4em;
-    margin-left: 1em;
     position: relative;
     margin: 1em;
-    width: 50%;
+    width: 37%;
+    height: 1.5em;
 }
 
-#rwoThree{
-    position: fixed;
+#rowTwo{
+    height: 23em;
+}
+
+#rowThree{
+    position: absolute;
     top: 21em;
     left: 37em;
     width: 30%;
@@ -57,19 +62,24 @@ h4{
     top: 41px;
 }
 
-#resumeLink:hover {
-    cursor: grab;
-    color: maroon;
+#rowFour{
+    width: 42%;
+    height: 17%;
+    position: relative;
+    left: 24em;
 }
 
-#workLink:hover{
-    cursor: grab;
-    color: maroon;
+#biographyId{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(42, 78, 7);
+    font-weight: 600;
 }
 
-#skillsLink:hover{
-    cursor: grab;
-    color: maroon;
+#contactFooter{
+    height: 100%;
+    width: 100%;
+    background-color: burlywood;
 }
 
 .homeId,.resId,.projId,.contId{
@@ -92,6 +102,7 @@ h4{
     vertical-align: middle;
     width: 20em;
     height: 20em;
+    top: 40px;
     border-radius: 50%;
     position: relative;
 }
@@ -117,3 +128,89 @@ h4{
 .skillClass{
     background-color: #338305;
 }
+
+.resumeClass:hover, .workClass:hover, .skillClass:hover {
+    opacity: 0.5;
+    cursor: grab;
+}
+
+.triangle-down {
+    position: absolute;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 22px solid rgb(42, 78, 7);
+    top: 7em;
+    left: 35.5em;
+}
+
+.callClass, .mailClass, .socialClass{
+    display: flex;
+}
+
+.mailPara, .mailLabel, .mailAvatar, .mailDiv, .callPara, .callLabel, .callAvatar, .callDiv, .socialAvatar, 
+.socialDiv, .socialLabel, .linkedinImage, .InstaImage{
+    position: relative;
+}
+
+.mailClass{
+    width: 20%;
+    margin-left: 11em;
+    margin-top: 12px;
+    position: absolute;
+}
+
+.mailDiv{
+    top: 10px;
+}
+
+.mailAvatar{
+    top: 4px;
+}
+
+.callClass{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 36.5em;
+    padding-left: 8em;
+    position: absolute;
+}
+
+.callDiv{
+    top: 2px;
+    margin-left: 8px;
+}
+
+.callAvatar{
+    top: 4px;
+    height: 32px;
+}
+
+.socialClass{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 64em;
+    padding-left: 8em;
+    position: relative;
+}
+
+.socialAvatar{
+    height: 60px;
+    width: 66px;
+    top: 5px;
+    left: 5px;
+}
+
+.socialLabel{
+    left: 7px;
+}
+
+.mailLabel, .mailPara, .callLabel, .callPara, .socialLabel{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(42, 78, 7);
+    font-weight: 600;
+} 
+
+

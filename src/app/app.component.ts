@@ -10,7 +10,7 @@ export class AppComponent {
   designation: string = 'Software Engineer / java';
   name: string = 'Prasanth Selvaraj';
   biography: string = 'I\'m a full stack developer with 5 years of experience on developing web application based on chennai.'+
-  'I have a Bachelor of Technology degree from Anna university. Aside from work, I am also an open source enthusiast and have created' +
+  'I have a Bachelor of Technology degree from Anna university. A side from work, I am also an open source enthusiast and have created' +
   'projects that were listed in GITHUB.My Interest lie in solving problems related to large-scale distributed software systems.';
   mailInfo: string = 'prasanth10.official@gmail.com';
   callInfo: string = '+91-8760320015';

@@ -1,0 +1,94 @@
+#rowTwo, #rowThree{
+    display:flex;
+}
+
+#rowTwo{
+    height: 23em;
+}
+
+#rowThree{
+    position: absolute;
+    top: 21em;
+    left: 37em;
+    width: 30%;
+    height: 16%;
+}
+
+#rowFour{
+    width: 42%;
+    height: 17%;
+    position: relative;
+    left: 24em;
+}
+
+.avatar{
+    object-fit: cover;
+    object-position: 50% 50%;
+    vertical-align: middle;
+    width: 20em;
+    height: 20em;
+    top: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#homeSubjectOne{
+    font-size: 4em;
+    position: relative;
+    margin: 1em;
+    width: 37%;
+    height: 1.5em;
+}
+
+h1 {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(136, 109, 49);
+}
+
+h1{ 
+    font-size: 35px;
+    margin: 1px;
+    color: rgb(42, 78, 7);
+}
+
+.resumeClass:hover, .workClass:hover, .skillClass:hover {
+    opacity: 0.5;
+    cursor: grab;
+}
+
+.resumeClass, .workClass, .skillClass {
+    width: 111px;
+    height: 107px;
+    border-radius: 50%;
+    background-color: #10ec90;
+    margin: 20px;
+    text-align: center;
+}
+
+.workClass{
+    background-color: #4dc443;
+}
+
+.skillClass{
+    background-color: #338305;
+}
+
+#biographyId{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(42, 78, 7);
+    font-weight: 600;
+}
+
+#resumeLink, #workLink, #skillsLink{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: ghostwhite;
+    font-style: italic;
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 17px;
+    top: 41px;
+}

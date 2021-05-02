@@ -1,0 +1,13 @@
+<div id="rowTwo">
+    <img src="/assets/Prasanth_1.jpg" alt="PS" class="avatar">
+    <h1 id="homeSubjectOne">Hello, <br><span style="font-size:xx-large;margin-left: 2px;">a bit about me:</span></h1>
+      <div id="rowThree">
+         <div class="resumeClass"  (mouseenter)="resStyle=true" (mouseleave)="resStyle=false"><a id="resumeLink" [style.color]="resStyle ? 'maroon' : 'ghostwhite'">MY RESUME</a></div>
+         <div class="workClass" (mouseenter)="workStyle=true" (mouseleave)="workStyle=false"><a id="workLink" [style.color]="workStyle ? 'maroon' : 'ghostwhite'">MY WORK</a></div>
+         <div class="skillClass" (mouseenter)="skillStyle=true" (mouseleave)="skillStyle=false"><a id="skillsLink" [style.color]="skillStyle ? 'maroon' : 'ghostwhite'">MY SKILLS</a></div>
+       </div>
+ </div>
+
+ <div id="rowFour">
+      <p id="biographyId">{{biography}}</p>
+ </div>

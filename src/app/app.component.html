@@ -6,21 +6,20 @@
           <div id="rowOne">
           <h4>{{designation}}</h4>
           <label class="homeId" [style.color]="homeId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="homeMouseOver()" (mouseleave)="homeId=false" (click)="homeClick()">Home</label>
+          (mouseenter)="homeMouseOver()" (mouseleave)="homeId=false" (click)="homeClick()" routerLink="/home">Home</label>
           
           <label class="resId" [style.color]="resId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="resMouseOver()" (mouseleave)="resId=false" (click)="resClick()">Resume</label>
+          (mouseenter)="resMouseOver()" (mouseleave)="resId=false" (click)="resClick()" routerLink="/resume">Resume</label>
 
           <label class="projId" [style.color]="projId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="projMouseOver()" (mouseleave)="projId=false" (click)="projClick()">Projects</label>
+          (mouseenter)="projMouseOver()" (mouseleave)="projId=false" (click)="projClick()" routerLink="/projects">Projects</label>
           
           <label class="contId" [style.color]="contId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="contMouseOver()" (mouseleave)="contId=false" (click)="contClick()">contact</label>
+          (mouseenter)="contMouseOver()" (mouseleave)="contId=false" (click)="contClick()" routerLink="/contact">contact</label>
           <div class="triangle-down" [style.left]="leftPosition"></div>
          </div>
 
-         <app-home></app-home>
-
+         <router-outlet></router-outlet>
        </form>
    </div>
 </div>

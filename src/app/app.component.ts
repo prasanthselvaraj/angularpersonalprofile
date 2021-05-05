@@ -47,19 +47,19 @@ export class AppComponent {
   }
 
   homeClick(): void {
-    this.leftPosition='36em';
+    this.leftPosition='35.4em';
   }
 
   resClick(): void {
-    this.leftPosition='42.5em';
+    this.leftPosition='42.3em';
   }
 
   projClick(): void {
-    this.leftPosition='50em';
+    this.leftPosition='49.5em';
   }
 
   contClick(): void {
-    this.leftPosition='57.5em';
+    this.leftPosition='57.1em';
   }
 
 }

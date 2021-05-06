@@ -1,1 +1,25 @@
-<p>projects works!</p>
+<div class="projectClass">
+  <h1 id="projectId">LATEST PROJECTS</h1>
+  <hr>
+  <div class="fordImgSliderId">
+    <ng-image-slider #nav
+      [images]="imageObject"
+      [infinite]="true"
+      [autoSlide]="1"
+      [imageSize]="{width: '100%', height: 300}"
+      slideImage="1"></ng-image-slider>
+  </div>
+  <div class="projOneClass">
+       <h2 id="projOneTitle">{{projOneTitle}} :</h2>
+        <ul id="projDetails">
+            <li id="projNameOne">{{projNameOne}}</li>
+            <li id="projNameTwo">{{projNameTwo}}</li>
+        </ul>
+        <h2 id="projOneDesc">{{projOneDesc}} :</h2>
+        <ul id="projDescription">
+            <li id="projDescOne">{{projDescOne}}</li>
+            <br>
+            <li id="projDescTwo">{{projDescTwo}}</li>
+        </ul>
+  </div>
+</div>

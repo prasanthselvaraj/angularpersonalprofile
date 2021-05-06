@@ -1,0 +1,60 @@
+.projectClass{
+    position: relative;
+    top: 1em;
+    width: 47em;
+    height: 61em;
+}
+
+.projOneClass{
+    position: relative;
+}
+
+#projectId{
+    color: rgb(42, 78, 7);
+    font-size: 4em;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fordImgSliderId{
+    width: 600px;
+    height: 300px;
+    text-align:center;
+    margin:0; 
+    padding:0;
+}
+
+#projDetails, #projDescription{
+    position: relative;
+}
+
+#projOneTitle{
+    color: rgb(126, 47, 11);
+    font-style: italic;
+    margin-bottom: 0px;
+    height: 36px;
+    width: 9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+#projOneDesc {
+    color: rgb(126, 47, 11);
+    font-style: italic;
+    margin-bottom: 0px;
+    height: 36px;
+    width: 12em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+#projNameOne, #projNameTwo, #projDescOne, #projDescTwo{
+    color: rgb(42, 78, 7);
+    font-style: italic;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

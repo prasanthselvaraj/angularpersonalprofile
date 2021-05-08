@@ -3,10 +3,10 @@
   <hr>
   <div class="fordImgSliderId">
     <ng-image-slider #nav
-      [images]="imageObject"
+      [images]="fordImageObject"
       [infinite]="true"
       [autoSlide]="1"
-      [imageSize]="{width: '100%', height: 300}"
+      [imageSize]="{width: '100%', height: '300'}"
       slideImage="1"></ng-image-slider>
   </div>
   <div class="projOneClass">
@@ -21,5 +21,52 @@
             <br>
             <li id="projDescTwo">{{projDescTwo}}</li>
         </ul>
+        <h2 id="projOneDB">{{projOneDB}} :</h2>
+        <p id="projectDBPara">{{projectDBPara}}
+        <h2 id="projOneServer">{{projOneServer}} :</h2>
+        <p id="projectServerPara">{{projectServerPara}}
+        <h2 id="projOneTech">{{projOneTech}} :</h2>
+        <p id="projectTechPara">{{projectTechPara}}
+        <h2 id="projRespHead">{{projRespHead}} :</h2>
+         <ul id="projResp">
+            <li id="projRespOne">{{projRespOne}}</li>
+            <br>
+            <li id="projRespTwo">{{projRespTwo}}</li>
+            <br>
+            <li id="projRespThree">{{projRespThree}}</li>
+            <br>
+            <li id="projRespFour">{{projRespFour}}</li>
+        </ul>
   </div>
+  <hr>
+  <div class="IvtlImgSliderId">
+    <ng-image-slider #nav
+      [images]="ivtlImageObject"
+      [infinite]="true"
+      [autoSlide]="1"
+      [imageSize]="{width: '100%', height: '300'}"
+      slideImage="1"></ng-image-slider>
+  </div>
+  <div class="projTwoClass">
+     <h2 id="projOneTitle">{{projOneTitle}} :</h2>
+     <p id="projDetail">{{projDetail}}</p>
+     <h2 id="projOneDesc">{{projOneDesc}} :</h2>
+     <ul id="projDescription">
+         <li id="proj2DescOne">{{proj2DescOne}}</li>
+         <br>
+         <li id="proj2DescTwo">{{proj2DescTwo}}</li>
+     </ul>
+     <h2 id="projOneDB">{{projOneDB}} :</h2>
+     <p id="project2DBPara">{{project2DBPara}}
+     <h2 id="projOneTech">{{projOneTech}} :</h2>
+     <p id="project2TechPara">{{project2TechPara}}
+      <h2 id="projRespHead">{{projRespHead}} :</h2>
+      <ul id="projResp">
+         <li id="proj2RespOne">{{proj2RespOne}}</li>
+         <br>
+         <li id="proj2RespTwo">{{proj2RespTwo}}</li>
+         <br>
+         <li id="proj2RespThree">{{proj2RespThree}}</li>
+     </ul>
+</div>
 </div>

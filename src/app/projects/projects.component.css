@@ -2,11 +2,18 @@
     position: relative;
     top: 1em;
     width: 47em;
-    height: 61em;
+    height: 100%;
 }
 
 .projOneClass{
     position: relative;
+    position: relative;
+    height: 57.5em;
+}
+
+.projTwoClass{
+    position: relative;
+    height: 47em;
 }
 
 #projectId{
@@ -19,7 +26,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.fordImgSliderId{
+.fordImgSliderId, .IvtlImgSliderId{
     width: 600px;
     height: 300px;
     text-align:center;
@@ -41,7 +48,7 @@
     text-decoration: underline;
 }
 
-#projOneDesc {
+#projOneDesc, #projOneDB, #projOneServer, #projOneTech, #projRespHead {
     color: rgb(126, 47, 11);
     font-style: italic;
     margin-bottom: 0px;
@@ -51,10 +58,22 @@
     text-decoration: underline;
 }
 
-#projNameOne, #projNameTwo, #projDescOne, #projDescTwo{
+#projNameOne, #projNameTwo, #projDescOne, #projDescTwo, #projectDBPara, #projectServerPara, #projectTechPara,
+#projRespOne, #projRespTwo, #projRespThree, #projRespFour, #projDetail, #proj2DescOne, #proj2DescTwo, #project2DBPara, 
+#project2TechPara, #proj2RespOne, #proj2RespTwo, #proj2RespThree{
     color: rgb(42, 78, 7);
     font-style: italic;
     margin-bottom: 0px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#projectDBPara, #projectServerPara, #projectTechPara, #project2DBPara, #project2TechPara, #projDetail{
+    left: 2.5em;
+    position: relative;
+}
+
+#projRespHead, #projResp{
+    top: 1em;
+    position: relative;
 }

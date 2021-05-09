@@ -36,7 +36,7 @@ h4{
     background-color: burlywood;
 }
 
-.homeId,.resId,.projId,.contId{
+.homeId,.resId,.projId,.skillsId, .contId{
     opacity: 1;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -46,7 +46,7 @@ h4{
     color: rgba(100, 62, 18, 0.788);
 } 
 
-.homeId:hover, .resId:hover, .projId:hover, .contId:hover{
+.homeId:hover, .resId:hover, .projId:hover,.skillsId:hover .contId:hover{
     opacity: 0.7;
 }
 

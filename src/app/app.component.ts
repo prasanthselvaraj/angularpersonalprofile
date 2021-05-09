@@ -16,12 +16,14 @@ export class AppComponent {
   homeId: boolean = false;
   resId: boolean = false;
   projId: boolean = false;
+  skillsId: boolean = false;
   contId: boolean = false;
 
   homeMouseOver(): void {
      this.homeId=true;
      this.resId=false;
      this.projId=false;
+     this.skillsId=false;
      this.contId=false;
   }
 
@@ -29,6 +31,7 @@ export class AppComponent {
     this.homeId=false;
      this.resId=true;
      this.projId=false;
+     this.skillsId=false;
      this.contId=false;
   }
 
@@ -36,6 +39,15 @@ export class AppComponent {
     this.homeId=false;
     this.resId=false;
     this.projId=true;
+    this.skillsId=false;
+    this.contId=false;
+  }
+
+  skillsMouseOver(): void {
+    this.homeId=false;
+    this.resId=false;
+    this.projId=false;
+    this.skillsId=true;
     this.contId=false;
   }
 
@@ -43,6 +55,7 @@ export class AppComponent {
     this.homeId=false;
     this.resId=false;
     this.projId=false;
+    this.skillsId=false;
     this.contId=true;
   }
 
@@ -58,8 +71,12 @@ export class AppComponent {
     this.leftPosition='49.5em';
   }
 
+  skillsClick(): void {
+    this.leftPosition='56.3em'
+  }
+
   contClick(): void {
-    this.leftPosition='57.1em';
+    this.leftPosition='62.9em';
   }
 
 }

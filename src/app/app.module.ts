@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ResumeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { ContactComponent } from './contact/contact.component';
       {path: 'home', component: HomeComponent},
       {path: 'resume', component: ResumeComponent},
       {path: 'projects', component: ProjectsComponent},
+      {path: 'skills', component: SkillsComponent},
       {path: 'contact', component: ContactComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
     ]),

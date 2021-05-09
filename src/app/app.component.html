@@ -13,6 +13,9 @@
 
           <label class="projId" [style.color]="projId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
           (mouseenter)="projMouseOver()" (mouseleave)="projId=false" (click)="projClick()" routerLink="/projects">Projects</label>
+
+          <label class="skillsId" [style.color]="skillsId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
+          (mouseenter)="skillsMouseOver()" (mouseleave)="skillsId=false" (click)="skillsClick()" routerLink="/skills">Skills</label>
           
           <label class="contId" [style.color]="contId ? 'rgb(56, 174, 221)' : 'rgba(100, 62, 18, 0.788)'"
           (mouseenter)="contMouseOver()" (mouseleave)="contId=false" (click)="contClick()" routerLink="/contact">contact</label>

@@ -17,8 +17,12 @@ h4 {
 .skillClass{
     position: relative;
     top: 1em;
-    height: 30em;
+    height: 32em;
     width: 69%
+}
+
+.mat-accordion{
+    position: relative;
 }
 
 .mat-table{

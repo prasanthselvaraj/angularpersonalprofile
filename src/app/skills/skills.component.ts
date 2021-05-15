@@ -6,8 +6,15 @@ export interface PeriodicElement {
   weight: number;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
+const BACK_ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, skill: 'Java 8', weight:8}
+];
+
+const FRONT_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'HTML 5', weight:7},
+  {position: 2, skill: 'Java Script', weight:5},
+  {position: 3, skill: 'CSS', weight:7},
+  {position: 4, skill: 'Ajax', weight:6}
 ];
 
 @Component({
@@ -23,6 +30,6 @@ export class SkillsComponent implements OnInit {
   }
 
   displayedColumns: string[] = ['position', 'skill', 'weight'];
-  dataSource = ELEMENT_DATA;
-
+  backDataSource = BACK_ELEMENT_DATA;
+  frontDataSource = FRONT_ELEMENT_DATA;
 }

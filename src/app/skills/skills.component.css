@@ -1,0 +1,16 @@
+#skillId{
+    color: rgb(42, 78, 7);
+    font-size: 4em;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skillClass{
+    position: relative;
+    top: 1em;
+    height: 30em;
+    width: 69%
+}

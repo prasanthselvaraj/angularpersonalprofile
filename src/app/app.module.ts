@@ -9,7 +9,12 @@ import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -31,6 +36,12 @@ import { SkillsComponent } from './skills/skills.component';
       {path: 'contact', component: ContactComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
     ]),
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

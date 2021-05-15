@@ -3,12 +3,11 @@ import { Component, OnInit } from '@angular/core';
 export interface PeriodicElement {
   skill: string;
   position: number;
+  weight: number;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, skill: 'Hydrogen'},
-  {position: 2, skill: 'Helium'},
-  {position: 3, skill: 'Lithium'},
+  {position: 1, skill: 'Java 8', weight:8}
 ];
 
 @Component({
@@ -23,7 +22,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  displayedColumns: string[] = ['position', 'skill'];
+  displayedColumns: string[] = ['position', 'skill', 'weight'];
   dataSource = ELEMENT_DATA;
 
 }

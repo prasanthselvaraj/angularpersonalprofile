@@ -6,21 +6,20 @@
           <div id="rowOne">
           <h4>{{designation}}</h4>
           <label class="homeId" [style.color]="homeId ? 'rgb(42, 78, 7)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="homeMouseOver()" (mouseleave)="homeId=false" (click)="homeClick()" routerLink="/home">Home</label>
+          (mouseenter)="homeMouseOver()" (mouseleave)="mouseLeave()" (click)="homeClick()" routerLink="/home">Home</label>
           
           <label class="resId" [style.color]="resId ? 'rgb(42, 78, 7)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="resMouseOver()" (mouseleave)="resId=false" (click)="resClick()" routerLink="/resume">Resume</label>
+          (mouseenter)="resMouseOver()" (mouseleave)="mouseLeave()" (click)="resClick()" routerLink="/resume">Resume</label>
 
           <label class="projId" [style.color]="projId ? 'rgb(42, 78, 7)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="projMouseOver()" (mouseleave)="projId=false" (click)="projClick()" routerLink="/projects">Projects</label>
+          (mouseenter)="projMouseOver()" (mouseleave)="mouseLeave()" (click)="projClick()" routerLink="/projects">Projects</label>
 
           <label class="skillsId" [style.color]="skillsId ? 'rgb(42, 78, 7)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="skillsMouseOver()" (mouseleave)="skillsId=false" (click)="skillsClick()" routerLink="/skills">Skills</label>
+          (mouseenter)="skillsMouseOver()" (mouseleave)="mouseLeave()" (click)="skillsClick()" routerLink="/skills">Skills</label>
           
           <label class="contId" [style.color]="contId ? 'rgb(42, 78, 7)' : 'rgba(100, 62, 18, 0.788)'"
-          (mouseenter)="contMouseOver()" (mouseleave)="contId=false" (click)="contClick()" routerLink="/contact">contact</label>
+          (mouseenter)="contMouseOver()" (mouseleave)="mouseLeave()" (click)="contClick()" routerLink="/contact">contact</label>
           
-          <div class="triangle-down" [style.left]="leftPosition"></div>
          </div>
 
          <router-outlet></router-outlet>

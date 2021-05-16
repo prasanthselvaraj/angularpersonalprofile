@@ -55,15 +55,6 @@ h4{
     padding-top: 7px;
 }
 
-.triangle-down {
-    position: absolute;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-    border-top: 22px solid rgb(42, 78, 7);
-    top: 7em;
-    left: 35.5em;
-}
-
 .callClass, .mailClass, .socialClass{
     display: flex;
 }

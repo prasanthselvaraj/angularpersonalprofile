@@ -1,18 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  //title: string = 'personalProfile';
+export class AppComponent implements OnInit{
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.pointer='home';
+    this.homeId=true;
+  }
+  
   designation: string = 'Software Engineer / java';
   name: string = 'Prasanth Selvaraj';
   mailInfo: string = 'prasanth10.official@gmail.com';
   callInfo: string = '+91-8760320015';
   
-  leftPosition: string;
+  pointer: string;
   homeId: boolean = false;
   resId: boolean = false;
   projId: boolean = false;
@@ -21,62 +28,101 @@ export class AppComponent {
 
   homeMouseOver(): void {
      this.homeId=true;
-     this.resId=false;
-     this.projId=false;
-     this.skillsId=false;
-     this.contId=false;
   }
 
   resMouseOver(): void {
-    this.homeId=false;
      this.resId=true;
-     this.projId=false;
-     this.skillsId=false;
-     this.contId=false;
   }
 
   projMouseOver(): void {
-    this.homeId=false;
-    this.resId=false;
     this.projId=true;
-    this.skillsId=false;
-    this.contId=false;
   }
 
   skillsMouseOver(): void {
-    this.homeId=false;
-    this.resId=false;
-    this.projId=false;
     this.skillsId=true;
-    this.contId=false;
   }
 
   contMouseOver(): void {
-    this.homeId=false;
-    this.resId=false;
-    this.projId=false;
-    this.skillsId=false;
     this.contId=true;
   }
 
   homeClick(): void {
-    this.leftPosition='35.4em';
+    this.pointer='home';
+    this.resId=false;
+    this.projId=false;
+    this.skillsId=false;
+    this.contId=false;
   }
 
   resClick(): void {
-    this.leftPosition='42.3em';
+    this.pointer='resume';
+    this.homeId=false;
+    this.projId=false;
+    this.skillsId=false;
+    this.contId=false;
   }
 
   projClick(): void {
-    this.leftPosition='49.5em';
+    this.pointer='project';
+    this.homeId=false;
+    this.resId=false;
+    this.skillsId=false;
+    this.contId=false;
   }
 
   skillsClick(): void {
-    this.leftPosition='56.3em'
+    this.pointer='skills';
+    this.homeId=false;
+    this.resId=false;
+    this.projId=false;
+    this.contId=false;
   }
 
   contClick(): void {
-    this.leftPosition='62.9em';
+    this.pointer='contact';
+    this.homeId=false;
+    this.resId=false;
+    this.projId=false;
+    this.skillsId=false;
   }
 
+  mouseLeave(): void {
+    switch(this.pointer){
+       case 'home':
+        this.homeId=true;
+        this.resId=false;
+        this.projId=false;
+        this.skillsId=false;
+        this.contId=false;
+       break;
+       case 'resume':
+        this.homeId=false;
+        this.resId=true;
+        this.projId=false;
+        this.skillsId=false;
+        this.contId=false;
+       break;
+       case 'project':
+        this.homeId=false;
+        this.resId=false;
+        this.projId=true;
+        this.skillsId=false;
+        this.contId=false;
+       break;
+       case 'skills':
+        this.homeId=false;
+        this.resId=false;
+        this.projId=false;
+        this.skillsId=true;
+        this.contId=false;
+       break;
+       case 'contact':
+        this.homeId=false;
+        this.resId=false;
+        this.projId=false;
+        this.skillsId=false;
+        this.contId=true;
+       break;
+    }
+  }
 }

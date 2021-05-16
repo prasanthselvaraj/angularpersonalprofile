@@ -28,7 +28,7 @@ const FRONT_FRAMEWORK_ELEMENT_DATA: PeriodicElement[] = [
 
 const MESSAGE_QUEUE_ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, skill: 'Rabbit MQ', weight:4},
-  {position: 1, skill: 'Kafka MQ', weight:3}
+  {position: 2, skill: 'Kafka MQ', weight:3}
 ];
 
 const CLOUD_PLATFORM_ELEMENT_DATA: PeriodicElement[] = [
@@ -37,8 +37,44 @@ const CLOUD_PLATFORM_ELEMENT_DATA: PeriodicElement[] = [
 
 const SERVER_ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, skill: 'IBM Liberty server', weight:6},
-  {position: 1, skill: 'Tomcat Server', weight:9}
+  {position: 2, skill: 'Tomcat 8.0 Server', weight:9}
 ];
+
+const TEST_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'API Testing Tool Postman', weight:9},
+  {position: 2, skill: 'Junit testing framework', weight:6}
+];
+
+const DATABASE_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'MySQL Server Management', weight:8},
+  {position: 2, skill: 'IBM Data Studio (DB2)', weight:7}
+];
+
+const VERSION_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'Git Hub', weight:8},
+  {position: 2, skill: 'Git Lab', weight:5}
+];
+
+const INTEGRATION_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'Jenkins', weight:8}
+];
+
+const BUILD_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'Gradle', weight:8},
+  {position: 2, skill: 'Maven', weight:8}
+];
+
+const IDE_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'Eclipse', weight:9},
+  {position: 2, skill: 'IntelliJ', weight:7},
+  {position: 3, skill: 'Visual Studio Code', weight:6}
+];
+
+const ARCHI_METHOD_ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, skill: 'Microservices', weight:8},
+  {position: 2, skill: 'Agile Methodology', weight:7}
+];
+
 
 @Component({
   selector: 'app-skills',
@@ -60,4 +96,11 @@ export class SkillsComponent implements OnInit {
   mqDataSource = MESSAGE_QUEUE_ELEMENT_DATA;
   cloudDataSource = CLOUD_PLATFORM_ELEMENT_DATA;
   serverDataSource = SERVER_ELEMENT_DATA;
+  testDataSource = TEST_ELEMENT_DATA;
+  dbDataSource = DATABASE_ELEMENT_DATA;
+  vscDataSource = VERSION_ELEMENT_DATA;
+  intDataSource = INTEGRATION_ELEMENT_DATA;
+  buildDataSource = BUILD_ELEMENT_DATA;
+  ideDataSource = IDE_ELEMENT_DATA;
+  archiDataSource = ARCHI_METHOD_ELEMENT_DATA;
 }

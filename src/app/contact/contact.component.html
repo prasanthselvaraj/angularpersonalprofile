@@ -1,1 +1,40 @@
-<p>contact works!</p>
+<div class="contactClass">
+    <div class="contactMain">
+         <h1 id="contactId">CONTACT</h1>
+         <hr>
+         <p>Looking forward to answering your email</p>
+         <form class="contactForm">
+            <mat-form-field class="nameFromField">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Your Name">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="emailFormField">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. kevin@example.com">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="phoneFormField">
+                <mat-label>Phone</mat-label>
+                <input (keypress)="numberOnly($event)" matInput placeholder="Your Phone Number" maxlength="10" onkeypress="false">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="skypeFormField">
+                <mat-label>Skype</mat-label>
+                <input matInput placeholder="Your Skype Id if any meeting setup">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>If any brief needed</mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field>
+
+          </form>
+    </div>
+</div>

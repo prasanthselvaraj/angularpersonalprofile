@@ -31,8 +31,7 @@ h4{
 }
 
 #contactFooter{
-    height: 100%;
-    width: 100%;
+    display: flex;
     background-color: burlywood;
 }
 
@@ -59,17 +58,32 @@ h4{
     display: flex;
 }
 
+.mailClass{
+    margin: 1em;
+    padding: 10px;
+    width: 27em;
+}
+
+.callClass{
+    margin: 1em;
+    margin-left: 6em;
+    padding: 10px;
+    padding-top: 18px;
+    padding-left: 40px;
+    width: 26em;
+}
+
+.socialClass{
+    margin: 1em;
+    padding: 10px;
+    width: 26em;
+}
+
 .mailPara, .mailLabel, .mailAvatar, .mailDiv, .callPara, .callLabel, .callAvatar, .callDiv, .socialAvatar, 
 .socialDiv, .socialLabel, .linkedinImage, .InstaImage{
     position: relative;
 }
 
-.mailClass{
-    width: 20%;
-    margin-left: 11em;
-    margin-top: 12px;
-    position: absolute;
-}
 
 .mailDiv{
     top: 10px;
@@ -77,15 +91,6 @@ h4{
 
 .mailAvatar{
     top: 4px;
-}
-
-.callClass{
-    width: 20%;
-    margin: 10px;
-    padding: 10px;
-    margin-left: 36.5em;
-    padding-left: 8em;
-    position: absolute;
 }
 
 .callDiv{
@@ -98,14 +103,7 @@ h4{
     height: 32px;
 }
 
-.socialClass{
-    width: 20%;
-    margin: 10px;
-    padding: 10px;
-    margin-left: 64em;
-    padding-left: 8em;
-    position: relative;
-}
+
 
 .socialAvatar{
     height: 60px;

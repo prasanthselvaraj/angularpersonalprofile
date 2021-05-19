@@ -21,6 +21,7 @@ h4 {
 
 .mat-accordion{
     position: relative;
+    bottom: 10px;
 }
 
 .mat-table{

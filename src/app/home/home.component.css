@@ -7,11 +7,10 @@
 }
 
 #rowThree{
-    position: absolute;
-    top: 21em;
-    left: 37em;
-    width: 30%;
-    height: 16%;
+    position: relative;
+    height: 10em;
+    top: 13em;
+    right: 30em;
 }
 
 #rowFour{
@@ -25,7 +24,7 @@
     object-fit: cover;
     object-position: 50% 50%;
     vertical-align: middle;
-    width: 20em;
+    width: 24em;
     height: 20em;
     top: 40px;
     border-radius: 50%;

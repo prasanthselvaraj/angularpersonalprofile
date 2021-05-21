@@ -47,7 +47,7 @@ import { MatTableModule } from '@angular/material/table';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

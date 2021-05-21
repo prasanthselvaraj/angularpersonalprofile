@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppComponent} from '../app.component';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
 
-  constructor() { }
+  constructor(private appComponent:AppComponent) { }
 
   ngOnInit(): void {
   }
@@ -20,5 +21,34 @@ export class HomeComponent implements OnInit{
   resStyle: boolean = false;
   workStyle: boolean = false;
   skillStyle: boolean = false;
+
+  tabClick(tabName : String) {
+    switch(tabName) {
+      case 'resume':
+        this.appComponent.pointer='resume';
+         this.appComponent.resId = true;
+         this.appComponent.homeId = false;
+         this.appComponent.projId = false;
+         this.appComponent.skillsId = false;
+         this.appComponent.contId = false;
+      break;
+      case 'work':
+        this.appComponent.pointer='project';
+        this.appComponent.resId = false;
+         this.appComponent.homeId = false;
+         this.appComponent.projId = true;
+         this.appComponent.skillsId = false;
+         this.appComponent.contId = false;
+      break;
+      case 'skill':
+        this.appComponent.pointer='skills';
+        this.appComponent.resId = false;
+        this.appComponent.homeId = false;
+        this.appComponent.projId = false;
+        this.appComponent.skillsId = true;
+        this.appComponent.contId = false;
+      break;
+    }    
+  }
 
 }

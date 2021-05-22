@@ -21,37 +21,10 @@
           (mouseenter)="contMouseOver()" (mouseleave)="mouseLeave()" (click)="contClick()" routerLink="/contact">contact</label>
           
          </div>
-
-         <router-outlet></router-outlet>
+         <div [@routeAnimations]="o && o.activatedRouteData && o.activatedRouteData['animation']">
+          <router-outlet #o="outlet"></router-outlet>
+         </div>
+         
        </form>
    </div>
 </div>
-
-<footer id="contactFooter">
-
-  <div class="mailClass">
-    <img src="/assets/icons8-mail-50.png" alt="mail" class="mailAvatar">
-    <div class="mailDiv">
-      <span class="mailLabel">Mail</span><br>
-      <span class="mailPara">{{mailInfo}}</span>
-    </div>
-  </div>
-
-  <div class="callClass">
-    <img src="/assets/icons8-phone-64.png" alt="call" class="callAvatar">
-    <div class="callDiv">
-      <span class="callLabel">Call</span><br>
-      <span class="callPara">{{callInfo}}</span>
-    </div>
-  </div>
-
-  <div class="socialClass">
-    <img src="/assets/icons8-plus-50.png" alt="social" class="socialAvatar">
-    <div class="socialDiv">
-      <span class="socialLabel">Follow me</span><br>
-      <img src="/assets/icons8-linkedin-50.png" alt="social" class="linkedinImage">
-      <img src="/assets/icons8-instagram-50.png" alt="social" class="InstaImage">
-    </div>
-  </div>
-
-</footer>

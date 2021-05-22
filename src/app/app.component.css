@@ -30,11 +30,6 @@ h4{
     position: relative;
 }
 
-#contactFooter{
-    display: flex;
-    background-color: burlywood;
-}
-
 .homeId,.resId,.projId,.skillsId, .contId{
     opacity: 1;
     font-style: italic;
@@ -53,74 +48,3 @@ h4{
     padding-left: 14em;
     padding-top: 7px;
 }
-
-.callClass, .mailClass, .socialClass{
-    display: flex;
-}
-
-.mailClass{
-    margin: 1em;
-    padding: 10px;
-    width: 27em;
-}
-
-.callClass{
-    margin: 1em;
-    margin-left: 6em;
-    padding: 10px;
-    padding-top: 18px;
-    padding-left: 40px;
-    width: 26em;
-}
-
-.socialClass{
-    margin: 1em;
-    padding: 10px;
-    width: 26em;
-}
-
-.mailPara, .mailLabel, .mailAvatar, .mailDiv, .callPara, .callLabel, .callAvatar, .callDiv, .socialAvatar, 
-.socialDiv, .socialLabel, .linkedinImage, .InstaImage{
-    position: relative;
-}
-
-
-.mailDiv{
-    top: 10px;
-}
-
-.mailAvatar{
-    top: 4px;
-}
-
-.callDiv{
-    top: 2px;
-    margin-left: 8px;
-}
-
-.callAvatar{
-    top: 4px;
-    height: 32px;
-}
-
-
-
-.socialAvatar{
-    height: 60px;
-    width: 66px;
-    top: 5px;
-    left: 5px;
-}
-
-.socialLabel{
-    left: 7px;
-}
-
-.mailLabel, .mailPara, .callLabel, .callPara, .socialLabel{
-    font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(42, 78, 7);
-    font-weight: 600;
-} 
-
-

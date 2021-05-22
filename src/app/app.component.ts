@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {slideInAnimation} from './route-animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [slideInAnimation]
 })
 export class AppComponent implements OnInit{
 
@@ -16,8 +18,6 @@ export class AppComponent implements OnInit{
   
   designation: string = 'Software Engineer / java';
   name: string = 'Prasanth Selvaraj';
-  mailInfo: string = 'prasanth10.official@gmail.com';
-  callInfo: string = '+91-8760320015';
   
   pointer: string;
   homeId: boolean = false;

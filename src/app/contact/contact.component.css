@@ -30,7 +30,27 @@ mat-form-field{
 
 #submitButton{
     background-color: #265222;
-    left: 21em;
     width: 11em;
-    bottom: 10px;
+    margin-left: 21em;
+}
+
+#contactFlex{
+    display: flex;
+}
+
+.mailLink, .phoneLink, .linkedInLink, .instagramLink{
+    width: 3em;
+    margin: 9px;
+    padding: 8px;
+    transition: transform .2s;
+    
+}
+
+#imageFlex{
+    margin-left: 10em;
+}
+
+.mailLink:hover, .phoneLink:hover, .linkedInLink:hover, .instagramLink:hover {
+    transform: scale(1.5); 
+    cursor: grab;
 }

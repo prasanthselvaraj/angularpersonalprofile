@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { User } from '../user';
+import {UserService} from '../user.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,10 +10,20 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public users = new User();
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
   }
+
+  userSubmit():void {
+    alert('HI SMPLE');
+    alert(this.users);
+    this.userService.getUsers(this.users).subscribe((data: User[]) => {
+      console.log(data);
+      alert(data);
+    });
+  } 
 
   emailFormControl = new FormControl('', [
     Validators.required,
@@ -25,5 +37,7 @@ export class ContactComponent implements OnInit {
     }
     return true;
   }
+
+  
 
 }

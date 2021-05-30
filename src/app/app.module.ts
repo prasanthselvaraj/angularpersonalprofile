@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { MatTableModule } from '@angular/material/table';
     MatInputModule,
     MatTableModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [AppComponent],
   bootstrap: [AppComponent]

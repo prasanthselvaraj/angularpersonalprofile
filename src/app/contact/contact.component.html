@@ -4,15 +4,16 @@
          <hr>
          <p>Looking forward to answering your email</p>
          <div id="contactFlex">
-         <form class="contactForm">
+         <form class="contactForm" (ngSubmit)="userSubmit()">
             <mat-form-field class="nameFromField">
               <mat-label>Name</mat-label>
-              <input matInput placeholder="Your Name">
+              <input matInput placeholder="Your Name" name="name" [(ngModel)]="users.name">
             </mat-form-field>
             <br>
             <mat-form-field class="emailFormField">
                 <mat-label>Email</mat-label>
-                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. kevin@example.com">
+                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. kevin@example.com"
+                [(ngModel)]="users.emailId" name="email">
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                   Please enter a valid email address
                 </mat-error>
@@ -23,17 +24,18 @@
             <br>
             <mat-form-field class="phoneFormField">
                 <mat-label>Phone</mat-label>
-                <input (keypress)="numberOnly($event)" matInput placeholder="Your Phone Number" maxlength="10" onkeypress="false">
+                <input (keypress)="numberOnly($event)" matInput placeholder="Your Phone Number" maxlength="10" onkeypress="false"
+                [(ngModel)]="users.phoneNum" name="phone">
             </mat-form-field>
             <br>
             <mat-form-field class="skypeFormField">
                 <mat-label>Skype</mat-label>
-                <input matInput placeholder="Your Skype Id if any meeting setup">
+                <input matInput placeholder="Your Skype Id if any meeting setup" [(ngModel)]="users.skypeId" name="skype">
             </mat-form-field>
             <br>
             <mat-form-field appearance="fill">
                 <mat-label>If any brief needed</mat-label>
-                <textarea matInput></textarea>
+                <textarea matInput [(ngModel)]="users.briefId" name="brief"></textarea>
             </mat-form-field>
             <br>
             <button id="submitButton" mat-raised-button color="primary">Submit</button>

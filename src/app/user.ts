@@ -4,4 +4,6 @@ export class User {
     phoneNum: string;
     skypeId: string;
     briefId: string;
+    status: String;
+    respMessage: String;
 }

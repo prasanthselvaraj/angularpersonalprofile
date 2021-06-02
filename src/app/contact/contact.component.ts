@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 import { User } from '../user';
 import {UserService} from '../user.service';
+import { NotificationService } from '../notification.service';
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,7 @@ import {UserService} from '../user.service';
 export class ContactComponent implements OnInit {
 
   public users = new User();
-  constructor(private userService:UserService) { }
+  constructor(private userService:UserService, private notifyService : NotificationService) { }
 
   ngOnInit(): void {
   }
@@ -19,9 +20,9 @@ export class ContactComponent implements OnInit {
   userSubmit():void {
     alert('HI SMPLE');
     alert(this.users);
-    this.userService.getUsers(this.users).subscribe((data: User[]) => {
-      console.log(data);
+    this.userService.getUsers(this.users).subscribe((data) => {
       alert(data);
+      this.showToasterSuccess();
     });
   } 
 
@@ -38,6 +39,14 @@ export class ContactComponent implements OnInit {
     return true;
   }
 
-  
+
+  showToasterSuccess(){
+    this.notifyService.showSuccess("Data shown successfully !!", "ItSolutionStuff.com")
+  }
+
+  showToasterError(){
+    this.notifyService.showError("Something is wrong", "ItSolutionStuff.com")
+  }
+
 
 }

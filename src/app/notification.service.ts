@@ -10,12 +10,14 @@ export class NotificationService {
 
   showSuccess(message, title){
     this.toastr.success(message, title,  {
-      timeOut: 3000,
+      timeOut: 5000
     })
 }
 
 showError(message, title){
-    this.toastr.error(message, title)
+    this.toastr.error(message, title, {
+       timeOut: 5000
+    })
 }
 
 }

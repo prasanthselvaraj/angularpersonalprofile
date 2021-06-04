@@ -6,4 +6,5 @@ export class User {
     briefId: string;
     status: String;
     respMessage: String;
+    thanksMessage: String;
 }

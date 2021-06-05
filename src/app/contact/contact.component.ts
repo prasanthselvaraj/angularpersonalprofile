@@ -20,8 +20,6 @@ export class ContactComponent implements OnInit {
   }
 
   userSubmit():void {
-    alert('HI SMPLE');
-    alert(this.users);
     this.userService.getUsers(this.users).subscribe(data=> {
       this.messageOne = data["thanksMessage"];
       this.messageTwo = data["respMessage"];

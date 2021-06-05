@@ -12,6 +12,8 @@ import { NotificationService } from '../notification.service';
 export class ContactComponent implements OnInit {
 
   public users = new User();
+  messageOne : String;
+  messageTwo : String;
   constructor(private userService:UserService, private notifyService : NotificationService) { }
 
   ngOnInit(): void {
@@ -20,9 +22,15 @@ export class ContactComponent implements OnInit {
   userSubmit():void {
     alert('HI SMPLE');
     alert(this.users);
-    this.userService.getUsers(this.users).subscribe((data) => {
-      alert(data);
-      this.showToasterSuccess();
+    this.userService.getUsers(this.users).subscribe(data=> {
+      this.messageOne = data["thanksMessage"];
+      this.messageTwo = data["respMessage"];
+      if(data["status"] == "SUCCESS"){
+        this.showToasterSuccess(this.messageTwo, this.messageOne);
+      } else {
+        this.showToasterError(this.messageTwo, this.messageOne);
+      }
+      
     });
   } 
 
@@ -40,12 +48,12 @@ export class ContactComponent implements OnInit {
   }
 
 
-  showToasterSuccess(){
-    this.notifyService.showSuccess("Data shown successfully !!", "ItSolutionStuff.com")
+  showToasterSuccess(messageOne, messageTwo){
+    this.notifyService.showSuccess(messageOne, messageTwo)
   }
 
-  showToasterError(){
-    this.notifyService.showError("Something is wrong", "ItSolutionStuff.com")
+  showToasterError(messageOne, messageTwo){
+    this.notifyService.showError(messageOne, messageTwo)
   }
 
 

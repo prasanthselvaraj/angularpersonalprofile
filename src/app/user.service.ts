@@ -8,7 +8,7 @@ import {User} from './user';
 })
 export class UserService {
 
-  private baseUrl = "http://localhost:8080/import/userData";
+  private baseUrl = "https://prasanth-personal-profile.herokuapp.com/import/userData";
   constructor(private http:HttpClient) { }
 
   getUsers(user : User): Observable<User[]> {
